@@ -1,0 +1,429 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-image: linear-gradient(to bottom, mediumblue, royalblue, skyblue);
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    
+}
+
+p {
+    padding: 5px;
+}
+
+h1 {
+    color: white;
+}
+
+.line {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+   
+}
+
+.country {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.brazil .flag {
+    width: 300px;
+    height: 200px;
+    background-color: green;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brazil .rect1 {
+    position: absolute;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 100px solid yellow;
+    top: 0;
+}
+.brazil .rect2 {
+    position: absolute;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-top: 100px solid yellow;
+    bottom: 0;
+}
+
+.brazil .circle {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: blue;
+    border-radius: 50%;
+}
+
+.brazil .circle .strip {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    top: 45%;
+    width: 120px;
+    height: 10px;
+    
+}
+
+.brazil .text {
+    position: absolute;
+    text-align: center;
+    color: green;
+    font-size: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+}
+
+.italy .flag {
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.italy .rect1 {
+    position: absolute;
+    background-color: green;
+    width: 100px;
+    height: 200px;
+    right: 200px;
+}
+
+.italy .rect2 {
+    position: absolute;
+    background-color: red;
+    width: 100px;
+    height: 200px;
+    left: 200px;
+}
+
+
+.germany .flag {
+    width: 300px;
+    height: 200px;
+    background-color: red;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.germany .rect1 {
+    position: absolute;
+    width: 300px;
+    height: 65px;
+    background-color: black;
+    top: 0;
+}
+
+.germany .rect2 {
+    position: absolute;
+    width: 300px;
+    height: 65px;
+    background-color: yellow;
+    bottom: 0;
+}
+
+
+.argentina .flag {
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.argentina .rect1 {
+    position: absolute;
+    top: 0;
+    background-color: rgb(86, 158, 218);
+    width: 300px;
+    height: 65px;
+}
+
+.argentina .rect2 {
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(86, 158, 218);
+    width: 300px;
+    height: 65px;
+}
+
+.argentina img {
+    width: 60px;
+    height: 60px;
+}
+
+.col-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  #modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+
+.closeBtn {
+    border-radius: 2px;
+    color: darkgray;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#modal-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+
+.france .flag {
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.france .rect1 {
+    position: absolute;
+    background-color: blue;
+    width: 100px;
+    height: 200px;
+    right: 200px;
+}
+
+.france .rect2 {
+    position: absolute;
+    background-color: red;
+    width: 100px;
+    height: 200px;
+    left: 200px;
+}  
+
+.uruguay .flag {
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.uruguay .sunBox {
+    width: 100px;
+    height: 90px;
+    background-color: white;
+    top: 0;
+    position: absolute;
+    right: 200px;
+    z-index: 2;
+}
+
+.uruguay .rect1 {
+    position: absolute;
+    top: 15px;
+    background-color: rgb(86, 99, 218);
+    width: 300px;
+    height: 30px;
+}
+
+.uruguay .rect2 {
+    position: absolute;
+    top: 60px;
+    background-color: rgb(86, 99, 218);
+    width: 300px;
+    height: 30px;
+}
+.uruguay .rect3 {
+    position: absolute;
+    top: 105px;
+    background-color: rgb(86, 99, 218);
+    width: 300px;
+    height: 30px;
+}
+
+.uruguay .rect4 {
+    position: absolute;
+    top: 150px;
+    background-color: rgb(86, 99, 218);
+    width: 300px;
+    height: 30px;
+}
+
+.uruguay img{
+    width: 90px;
+    height: 90px;
+}
+
+.spain .flag {
+    width: 300px;
+    height: 200px;
+    background-color: yellow;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.spain .rect1 {
+    position: absolute;
+    top: 0;
+    background-color: red;
+    width: 300px;
+    height: 65px;
+}
+
+.spain .rect2 {
+    position: absolute;
+    bottom: 0;
+    background-color: red;
+    width: 300px;
+    height: 65px;
+}
+
+.spain img {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 20%;
+}
+
+.england .flag {
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.england .rect1 {
+    position: absolute;
+    
+    background-color: red;
+    width: 300px;
+    height: 30px;
+}
+
+.england .rect2 {
+    position: absolute;
+    
+    background-color: red;
+    width: 30px;
+    height: 200px;
+}
+
+
+.btn {
+    background-color: dodgerblue;
+    cursor: pointer;
+    color: white;  
+    border: none;
+    border-radius: 5px;
+    width: 80px;
+    height: 40px;  
+    margin-bottom: 10px;
+}
+
+.btn:hover {
+    background-color: royalblue;
+    color: gray;
+    transition: .5s;
+}
+
+@media (max-width: 768px) {
+
+    h1 {
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 26px;
+
+    }
+    .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .line {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .uruguay .flag {
+        margin-top: 10px;
+    }
+}
